@@ -33,7 +33,7 @@ class UpdateBookInfo extends Component {
         })
       })
       .catch(err => {
-        console.log("Error from UpdateBookInfo");
+        console.log("Error from UpdateItemInfo");
       })
   };
 
@@ -59,7 +59,7 @@ class UpdateBookInfo extends Component {
         this.props.history.push('/show-book/'+this.props.match.params.id);
       })
       .catch(err => {
-        console.log("Error in UpdateBookInfo!");
+        console.log("Error in UpdateItemInfo!");
       })
   };
 
@@ -89,7 +89,7 @@ class UpdateBookInfo extends Component {
               <label htmlFor="title">Item Name</label>
               <input
                 type='text'
-                placeholder='Title of the Book'
+                placeholder='Name of the Item'
                 name='title'
                 className='form-control'
                 value={this.state.title}
@@ -102,7 +102,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="isbn">Item ID</label>
               <input
                 type='text'
-                placeholder='ISBN'
+                placeholder='Item ID'
                 name='isbn'
                 className='form-control'
                 value={this.state.isbn}
@@ -114,7 +114,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="author">Company Name</label>
               <input
                 type='text'
-                placeholder='Author'
+                placeholder='Company'
                 name='author'
                 className='form-control'
                 value={this.state.author}
@@ -126,7 +126,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="description">Item Specs</label>
               <input
                 type='text'
-                placeholder='Describe this book'
+                placeholder='Item Specs'
                 name='description'
                 className='form-control'
                 value={this.state.description}
@@ -138,7 +138,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="published_date">Date</label>
               <input
                 type='date'
-                placeholder='published_date'
+                placeholder='Date'
                 name='published_date'
                 className='form-control'
                 value={this.state.published_date}
@@ -149,7 +149,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="publisher">Employee</label>
               <input
                 type='text'
-                placeholder='Publisher of this Book'
+                placeholder='Employee'
                 name='publisher'
                 className='form-control'
                 value={this.state.publisher}
