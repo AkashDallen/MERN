@@ -54,32 +54,32 @@ class showBookDetails extends Component {
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Title</td>
+            <td>Item Name</td>
             <td>{ book.title }</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Author</td>
+            <td>Company Name</td>
             <td>{ book.author }</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>ISBN</td>
+            <td>Item ID</td>
             <td>{ book.isbn }</td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td>Publisher</td>
+            <td>Employee</td>
             <td>{ book.publisher }</td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td>Published Date</td>
+            <td>Date</td>
             <td>{ book.published_date }</td>
           </tr>
           <tr>
             <th scope="row">6</th>
-            <td>Description</td>
+            <td>Item Specs</td>
             <td>{ book.description }</td>
           </tr>
         </tbody>
@@ -93,14 +93,14 @@ class showBookDetails extends Component {
             <div className="col-md-10 m-auto">
               <br /> <br />
               <Link to="/" className="btn btn-outline-warning float-left">
-                  Show Book List
+                  Show Item List
               </Link>
             </div>
             <br />
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Book's Record</h1>
+              <h1 className="display-4 text-center">Items's Record</h1>
               <p className="lead text-center">
-                  View Book's Info
+                  View Item's Info
               </p>
               <hr /> <br />
             </div>
@@ -116,7 +116,7 @@ class showBookDetails extends Component {
 
             <div className="col-md-6">
               <Link to={`/edit-book/${book._id}`} className="btn btn-outline-info btn-lg btn-block">
-                    Edit Book
+                    Edit Item
               </Link>
               <br />
             </div>

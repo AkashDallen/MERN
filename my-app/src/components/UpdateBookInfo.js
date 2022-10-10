@@ -72,13 +72,13 @@ class UpdateBookInfo extends Component {
             <div className="col-md-8 m-auto">
               <br />
               <Link to="/" className="btn btn-outline-warning float-left">
-                  Show BooK List
+                  Show Item List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Edit Book</h1>
+              <h1 className="display-4 text-center">Edit Item</h1>
               <p className="lead text-center">
-                  Update Book's Info
+                  Update Item's Info
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ class UpdateBookInfo extends Component {
           <div className="col-md-8 m-auto">
           <form noValidate onSubmit={this.onSubmit}>
             <div className='form-group'>
-              <label htmlFor="title">Title</label>
+              <label htmlFor="title">Item Name</label>
               <input
                 type='text'
                 placeholder='Title of the Book'
@@ -99,7 +99,7 @@ class UpdateBookInfo extends Component {
             <br />
 
             <div className='form-group'>
-            <label htmlFor="isbn">ISBN</label>
+            <label htmlFor="isbn">Item ID</label>
               <input
                 type='text'
                 placeholder='ISBN'
@@ -111,7 +111,7 @@ class UpdateBookInfo extends Component {
             </div>
 
             <div className='form-group'>
-            <label htmlFor="author">Author</label>
+            <label htmlFor="author">Company Name</label>
               <input
                 type='text'
                 placeholder='Author'
@@ -123,7 +123,7 @@ class UpdateBookInfo extends Component {
             </div>
 
             <div className='form-group'>
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">Item Specs</label>
               <input
                 type='text'
                 placeholder='Describe this book'
@@ -135,7 +135,7 @@ class UpdateBookInfo extends Component {
             </div>
 
             <div className='form-group'>
-            <label htmlFor="published_date">Published Date</label>
+            <label htmlFor="published_date">Date</label>
               <input
                 type='date'
                 placeholder='published_date'
@@ -146,7 +146,7 @@ class UpdateBookInfo extends Component {
               />
             </div>
             <div className='form-group'>
-            <label htmlFor="publisher">Publisher</label>
+            <label htmlFor="publisher">Employee</label>
               <input
                 type='text'
                 placeholder='Publisher of this Book'
@@ -157,7 +157,7 @@ class UpdateBookInfo extends Component {
               />
             </div>
 
-            <button type="submit" className="btn btn-outline-info btn-lg btn-block">Update Book</button>
+            <button type="submit" className="btn btn-outline-info btn-lg btn-block">Update Item</button>
             </form>
           </div>
 

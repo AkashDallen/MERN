@@ -47,7 +47,7 @@ class CreateBook extends Component {
         this.props.history.push('/');
       })
       .catch(err => {
-        console.log("Error in CreateBook!");
+        console.log("Error in CreateItem!");
       })
   };
 
@@ -59,20 +59,20 @@ class CreateBook extends Component {
             <div className="col-md-8 m-auto">
               <br />
               <Link to="/" className="btn btn-outline-warning float-left">
-                  Show BooK List
+                  Show Item List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Add Book</h1>
+              <h1 className="display-4 text-center">Add Item</h1>
               <p className="lead text-center">
-                  Create new book
+                  Create new Item
               </p>
 
               <form noValidate onSubmit={this.onSubmit}>
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Title of the Book'
+                    placeholder='Item Name'
                     name='title'
                     className='form-control'
                     value={this.state.title}
@@ -84,7 +84,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='ISBN'
+                    placeholder='Item_ID'
                     name='isbn'
                     className='form-control'
                     value={this.state.isbn}
@@ -95,7 +95,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Author'
+                    placeholder='Company'
                     name='author'
                     className='form-control'
                     value={this.state.author}
@@ -106,7 +106,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Describe this book'
+                    placeholder='Describe Specs'
                     name='description'
                     className='form-control'
                     value={this.state.description}
@@ -117,7 +117,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='date'
-                    placeholder='published_date'
+                    placeholder='Date of Item Loaded'
                     name='published_date'
                     className='form-control'
                     value={this.state.published_date}
@@ -127,7 +127,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Publisher of this Book'
+                    placeholder='Name who inserted item'
                     name='publisher'
                     className='form-control'
                     value={this.state.publisher}
